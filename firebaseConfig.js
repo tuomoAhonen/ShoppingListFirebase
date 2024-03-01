@@ -8,14 +8,16 @@ import {initializeApp} from 'firebase/app';
 // import {...} from "firebase/storage";
 
 // Initialize Firebase
+//console.log(FB_DATABASEURL);
+
 const firebaseConfig = {
-	apiKey: 'AIzaSyBr5M3pbje0ixzX-IVgVsTIN7_CqgtvVsI',
-	authDomain: 'shoppinglistfirebase-acbc8.firebaseapp.com',
-	databaseURL: 'https://shoppinglistfirebase-acbc8-default-rtdb.europe-west1.firebasedatabase.app',
-	projectId: 'shoppinglistfirebase-acbc8',
-	storageBucket: 'shoppinglistfirebase-acbc8.appspot.com',
-	messagingSenderId: '926685907602',
-	appId: '1:926685907602:web:25c430a34b7839e8edf44b',
+	apiKey: process.env.FB_APIKEY,
+	authDomain: process.env.FB_AUTHDOMAIN,
+	databaseURL: process.env.FB_DATABASEURL,
+	projectId: process.env.FB_PROJECTID,
+	storageBucket: process.env.FB_STORAGEBUCKET,
+	messagingSenderId: process.env.FB_MESSAGINGSENDERID,
+	appId: process.env.FB_APPID,
 	//measurementId: 'G-measurement-id',
 };
 
