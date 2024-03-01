@@ -31,7 +31,7 @@ export default function App() {
 	};
 
 	useEffect(() => {
-		console.log('usEffect');
+		//console.log('usEffect');
 		const itemsRef = ref(db, 'ShoppingList/');
 		onValue(
 			itemsRef,
